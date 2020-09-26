@@ -5,7 +5,7 @@ import { notification } from 'antd';
 
 const fetchClient = () => {
   const defaultOptions = {
-    baseURL: 'http://2f7a1cce2697.ngrok.io/api/',
+    baseURL: 'http://127.0.0.1:8000/api/',
     headers: {
       'Content-Type': 'application/json',
     },

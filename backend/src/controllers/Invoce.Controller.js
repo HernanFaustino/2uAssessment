@@ -1,4 +1,5 @@
 import Invoice from '../models/Invoice';
+import { Socket } from '../utils/sockets';
 
 const INVOICE_STATES = {
     PENDING: 'pending',
@@ -39,7 +40,8 @@ export async function createInvoice(req, res) {
             ]
         });
         if (newInvoice) {
-             return res.json({
+            Socket.emit("dataUpdated", newInvoice);
+            return res.json({
                 message: 'invoice submitted successfully',
                 data: newInvoice,
             });
@@ -152,10 +154,10 @@ export async function approveInvoice(req, res) {
             status: INVOICE_STATES.APPROVED
         });
 
-         return res.json({
+        return res.json({
             message: 'Invoice updated successfully',
             data: invoice
-         });
+        });
     } catch (e) {
         console.error(e);
         return res.status(500).json({

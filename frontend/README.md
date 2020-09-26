@@ -41,6 +41,8 @@ To run this project follow this instructions:
   ```
   $ yarn build
   ```
+  
+  And go to  ```http://localhost:3000/```
 
 # Contributing
 If you have some ideas or improvements to this project, feel free to create pull requests or contact the memebers of the Unity team

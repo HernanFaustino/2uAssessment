@@ -57,6 +57,12 @@ To run this project follow this instructions:
   ```
   $ yarn run build
   ```
+  
+  Test the following endpoints
+  
+  - GET: ```http://127.0.0.1:8000/api/invoice/pending``` to list pending invoices.
+  - POST: ```http://127.0.0.1:8000/api/invoice/```: to create an invoice.
+  - POST: ```http://127.0.0.1:8000/api/invoice/approve/<id>``` to approve a invoice
 
 # Contributing
 If you have some ideas or improvements to this project, feel free to create pull requests or contact the memebers of the Unity team.

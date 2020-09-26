@@ -71,7 +71,18 @@ project is developed with postgres database. If you want to use another database
   Test the following endpoints
   
   - GET: ```http://127.0.0.1:8000/api/invoice/pending``` to list pending invoices.
-  - POST: ```http://127.0.0.1:8000/api/invoice/```: to create an invoice.
+  - POST: ```http://127.0.0.1:8000/api/invoice/```: to create an invoice with the following body:
+    ```
+    {
+      "invoice_number": "12348",
+      "total": "200.99",
+      "currency": "USD",
+      "invoice_date": "2019-08-17",
+      "due_date": "2019-09-17",
+      "vendor_name": "Acme Cleaners Inc.",
+      "remittance_address": "123 ABC St. Charlotte, NC 28209"
+    }
+    ```
   - POST: ```http://127.0.0.1:8000/api/invoice/approve/<id>``` to approve a invoice
 
 # Contributing

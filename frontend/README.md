@@ -12,13 +12,13 @@ Main requirements for this project are:
 - npm: >5.8.0
 
 ## Usage
-To use run this project:
+To run this project follow this instructions:
 
 * Clone this repository
     ```
     $ git clone https://github.com/HernanFaustino/2uAssessment.git
     ```
-* Go to the project and then into the frontend folder
+* Go to the project folder and then go into the frontend folder
     ```
     $ cd <project-dir>/frontend
     ```

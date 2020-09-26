@@ -4,6 +4,7 @@ import {
   DATABASE_DB,
   DATABASE_USER,
   DATABASE_PASSWORD,
+  DATABASE_DIALECT,
 } from '../config/database';
 
 export const sequelize = new Sequelize(
@@ -12,7 +13,7 @@ export const sequelize = new Sequelize(
   DATABASE_PASSWORD,
   {
     host: DATABASE_HOST,
-    dialect: 'postgres',
+    dialect: DATABASE_DIALECT,
     pool: {
       max: 5,
       min: 0,

@@ -24,7 +24,17 @@ To run this project follow this instructions:
     ```
 * To create the needed table, execute the queries located in ```
   <project-dir>/backend/sql/db.sql```
-* Configure the database conections in ```<project-dir>/backend/src/config/database.js```
+* Configure the database conections in ```<project-dir>/backend/src/config/database.js```. This
+project is developed with postgres database. If you want to use another database ensure you have installed the following according your database:
+
+  ```
+  $ npm install --save pg pg-hstore # Postgres already in package.json
+  $ npm install --save mysql2
+  $ npm install --save mariadb
+  $ npm install --save sqlite3
+  $ npm install --save tedious # Microsoft SQL Server
+  ```
+
 * Install dependencies
 
     ```

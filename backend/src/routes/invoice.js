@@ -1,11 +1,11 @@
 import { Router } from 'express'
 
 import {
-    createInvoice,
-    getInvoices,
-    approveInvoice,
-    getPendingInvoices,
-    deleteInvoice,
+  createInvoice,
+  getInvoices,
+  approveInvoice,
+  getPendingInvoices,
+  deleteInvoice,
 } from '../controllers/Invoce.Controller';
 
 const router = Router();

@@ -20,6 +20,15 @@ export const sequelize = new Sequelize(
       require: 30000,
       idle: 10000
     },
-    logging: false
-  }
+    ssl: true,
+    logging: false,
+    protocol: 'postgres',
+    dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false
+        },
+    }
+  },
 );
+
